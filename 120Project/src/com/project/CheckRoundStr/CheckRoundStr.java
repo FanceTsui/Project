@@ -10,9 +10,9 @@ public class CheckRoundStr {
 	
 	public static void main(String[] args) {
 		String Str ="level";
-		check(Str);
-		String Str1="asssaa";
-		check(Str1);
+		check1(Str);
+		String Str1="aasaa";
+		check1(Str1);
 	}
 	
 	private static void check(String content){
@@ -32,6 +32,16 @@ public class CheckRoundStr {
 		}else{
 			System.out.println("字符串"+content+"不是回文！");
 		}
-	} 
+	}
+	
+	
+	private static void check1(String content){
+		String newStr = new StringBuffer(content).reverse().toString();
+		if(content.equals(newStr)){
+			System.out.println("字符串"+content+"是回文！");
+		}else{
+			System.out.println("字符串"+content+"不是回文！");
+		}
+	}
 
 }

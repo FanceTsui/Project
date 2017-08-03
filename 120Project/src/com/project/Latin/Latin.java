@@ -20,8 +20,9 @@ public class Latin {
 			char con = content.charAt(i);
 			int index = str.indexOf(con);
 			if (index == -1) {
-				newStr = content.substring(0, i) + content.substring(i + 1, content.length()) + "-" + con + "ay";
+				newStr = content.substring(0, i) + content.substring(i + 1) + "-" + con + "ay";
 				break;
+				
 			}
 		}
 		System.out.println(newStr);
